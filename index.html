@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- NASLOV STRANICE -->
   <title>Timberworks - HOME</title>
 
-  <!-- META TAGOVI -->
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Timberworks - najkvalitetniji proizvodi od drveta u regionu!"/>
+  <meta name="description" content="Timberworks - all products of wood you ever need at one place."/>
   <meta name="keywords" content="timberworks, drveni stolovi, drvene stolice, stolarija, proizvodi od drveta"/>
 
-   <!-- LINKOVANJE FONTA -->
    <link rel="preconnect" href="https://fonts.googleapis.com"/>
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
 
-   <!-- FONT AWESOME -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- LINKOVANJE CSS-a -->
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-  <!-- IKONICA STRANICE -->
   <link rel="icon" type="image/png" href="img/timberworks-favicon.png"/>
 </head>
+
 <body>
-  <!-- OKVIR STRANICE -->
-  <div id="wrap">
-    <!-- BLOK TRAKE ZA SNIZENJE -->
-    <div id="discount-bar">
-      <p id="discount-text">Special 15% discount on all orders! Discount lasts until 21.12.2024.</p>
+  <div id="wrapper">
+    <div id="discount">
+      <p>Special 15% discount on all orders! Discount lasts until 21.12.2024.</p>
     </div>
-    <!-- OKVIR HORIZONTALNE NAVIGACIJE -->
     <div id="nav-wrap">
-      <!-- BLOK MENIJA NAVIGACIJE-->
       <header id="nav" class="flex-center-row">
         <ul id="nav-menu" class="flex-center-row">
-          <li class="li-hover li-active transition no-select">
-            <a href="index.html" class="nav-link">HOME</a>
+          <li class="li-active">
+            <a href="index.html">HOME</a>
           </li>
-          <li class="li-hover transition no-select">
-            <a href="gallery.html" class="nav-link">GALLERY</a>
+          <li>
+            <a href="gallery.html">PRODUCTS</a>
           </li>
-          <li class="no-select">
-            <div id="nav-logo">
-              <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
-            </div>
+          <li id="nav-logo">
+            <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
           </li>
-          <li class="li-hover transition no-select">
-            <a href="contact.html" class="nav-link">CONTACT</a>
+          <li>
+            <a href="contact.html">CONTACT</a>
           </li>
-          <li class="li-hover transition no-select">
-            <a href="author.html" class="nav-link">AUTHOR</a>
+          <li>
+            <a href="author.html">AUTHOR</a>
           </li>
         </ul>
       </header>
-      <!-- BLOK KORPE -->
-      <div id="shopping-basket" class="no-select">
-        <span class="fa-solid fa-basket-shopping icon-style"></span>
+      <div id="cart">
+        <span class="fa-solid fa-basket-shopping"></span>
       </div>
-      <!-- BLOK WISHLISTE -->
-      <div id="wishlist-logo" class="no-select">
-        <span class="fa-solid fa-heart icon-style"></span>
+      <div id="wish">
+        <span class="fa-solid fa-heart"></span>
       </div>
     </div>
    
-    <!-- HERO SEKCIJA -->
     <div id="hero-wrap" class="flex-center-column">
-      <!-- BLOK HERO TEKSTA -->
       <div id="hero" class="flex-center-column">
-        <h1 id="hero-h1">TIMBERWORKS</h1>
-        <h2 id="hero-h2">Best products made out of the best quality wood at one place!</h2>
+        <h1>TIMBERWORKS</h1>
+        <h2>High quality products made out of the best quality wood at one place!</h2>
       </div>
-      <!-- BLOK HORIZONALNIH HERO BUTTONA -->
-      <div id="hero-btn-wrap" class="flex-center-row">
-        <a class="hero-btn hero-btn-first transition no-select">Our offers</a>
-        <a class="hero-btn hero-btn-second transition no-select">About us</a>
+      <div id="hero-btn" class="flex-center-row">
+        <a class="hero-btn-first">Our offers</a>
+        <a class="hero-btn-second">About us</a>
       </div>
-      <!-- BLOK STRELICE ZA SKROLOVANJE -->
-      <div id="scroll-arrow" class="flex-center-row">
+      <div id="arrow" class="flex-center-row">
         <span class="fa-solid fa-arrow-down"></span>
       </div>
     </div>
@@ -89,15 +72,15 @@
         <div id="daily-info" class="flex-center-column">
           <p id="daily-discount">
             <span class="fa-solid fa-star"></span>
-            DAILY PICK
+            DAILY DEAL
             <span class="fa-solid fa-star"></span>
           </p>
           <p id="daily-title">Oak-wood dining room set</p>
           <div id="daily-contents" class="flex-start-column">
             <p>This set includes:</p>
-            <p>-4x wooden chairs</p>
-            <p>-1x large wooden table</p>
-            <p>-4x wooden plates</p>
+            <p>- 4x wooden chairs</p>
+            <p>- 1x large wooden table</p>
+            <p>- 4x wooden plates</p>
           </div>
           <div id="daily-btn-wrap" class="flex-space-row">
             <div id="daily-btn">
@@ -110,28 +93,79 @@
           </div>
         </div>
         <div id="daily-image">
-          <img class="transition no-select" alt="table-set" src="img/table-set.jpg"/>
-          <div id="daily-overlay" class="flex-center-row transition no-select">
+          <img alt="table-set" src="img/table-set.jpg"/>
+          <div id="daily-overlay" class="flex-center-row">
           </div>
         </div>
       </div>
     </div>
 
 
-    <div id="gallery">
+    <div id="gallery-wrap" class="flex-center-column">
+      <div id="gallery-header" class="flex-center-row">
+        <p>OUR OFFERS</p>
+      </div>
+      <div class="gallery-category flex-center-row">
+        <div class="category-info flex-center-column">
+          <p>Furniture sets</p>
+          <div class="line"></div>
+          <a href="gallery.html" class="view-button">View all offers</a>
+        </div>
+        <div class="category-slider flex-center-row">
+          <div class="item i1">
+            <div class="item-info">
+
+            </div>
+          </div>
+          <div class="item i2">
+            <div class="item-info">
+
+            </div>
+          </div>
+          <div class="item i3">
+            <div class="item-info">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-category flex-center-row">
+        
+        <div class="category-info flex-center-column">
+          <p>Single pieces</p>
+          <div class="line"></div>
+          <a href="gallery.html" class="view-button">View all offers</a>
+        </div>
+        <div class="category-slider flex-center-row">
+          <div class="item i4 singles">
+            <div class="item-info">
+
+            </div>
+          </div>
+          <div class="item i5 singles">
+            <div class="item-info">
+
+            </div>
+          </div>
+          <div class="item i6 singles">
+            <div class="item-info">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-wrap">
 
     </div>
 
-    <div id="about">
-
-    </div>
-
-    <div id="contact">
+    <div id="contact-wrap">
 
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
+    <div id="footer-wrap">
 
     </div>
   </div>
