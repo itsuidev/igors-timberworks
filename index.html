@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en-US">
 <head>
   <title>Timberworks - HOME</title>
   <meta charset="UTF-8"/>
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- 1920x1080 rezolucija -->
   <div id="wrapper">
     <a href="#discount" id="pg-top">
       <span class="fa-solid fa-arrow-up"></span>
@@ -31,7 +32,7 @@
 
     <section id="nav-wrap">
       <header id="nav">
-        <ul id="nav-menu" class="flex jc ac">
+        <ul id="nav-menu">
           <li class="li-active">
             <a href="index.html">HOME</a>
           </li>
@@ -64,7 +65,7 @@
       </div>
       <div id="hero-btn" class="flex jc ac">
         <a href="#gallery-wrap" class="hero-btn-first">Our offers</a>
-        <a class="hero-btn-second">About us</a>
+        <a href="#about-wrap" class="hero-btn-second">About us</a>
       </div>
       <div id="arrow">
         <span class="fa-solid fa-arrow-down"></span>
@@ -122,19 +123,19 @@
         <div class="category-slider flex jc ac">
           <div class="item i1">
             <div class="item-info">
-              <p>Small birch round-table set x1</p>
+              <p>Small birch round-table set</p>
               <p>750$</p>
             </div>
           </div>
           <div class="item i2">
             <div class="item-info">
-              <p>Big birch square-table set x1</p>
+              <p>Big birch square-table set</p>
               <p>1250$</p>
             </div>
           </div>
           <div class="item i3">
             <div class="item-info">
-              <p>Lacquered oak rectangular set x1</p>
+              <p>Lacquered oak rectangular set</p>
               <p>2000$</p>
             </div>
           </div>
@@ -148,19 +149,19 @@
         <div class="category-slider flex jc ac">
           <div class="item i4">
             <div class="item-info">
-              <p>Lacquered epoxy filled table x1</p>
+              <p>Lacquered epoxy filled table</p>
               <p>3500$</p>
             </div>
           </div>
           <div class="item i5">
             <div class="item-info">
-              <p>Oval walnut table x1</p>
+              <p>Oval walnut table</p>
               <p>2200$</p>
             </div>
           </div>
           <div class="item i6">
             <div class="item-info">
-              <p>The 3 in 1 table bench x1</p>
+              <p>The 3 in 1 table bench</p>
               <p>800$</p>
             </div>
           </div>
@@ -191,15 +192,15 @@
           </div>
         </div>
         <div id="about-form">
-          <p>CONTACT US</p>
+          <p>INQUIRY</p>
           <form action="" method="GET" class="flex col jc as">
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Email"/>
+            <input type="text" id="email" name="email" placeholder="Email" autocomplete="autocomplete" required="required"/>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name"/>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="autocomplete" required="required"/>
             <label for="message">Message:</label>
-            <input type="text" id="message" name="message" placeholder="Message"/>
-            <input type="submit" id="submit" name="submit"/>
+            <input type="text" id="message" name="message" placeholder="Message" required="required"/>
+            <input type="submit" id="submit" name="submit" value="SEND"/>
           </form>
         </div>
       </div>
@@ -211,7 +212,7 @@
           <div class="f1 flex col jc ac">
             <p>TIMBER<span>WORKS</span></p>
             <p>carpentry</p>
-            <a href="contact.html">Contact us<span class="fa-solid fa-paper-plane"></soan></a>
+            <a href="contact.html">Contact us<span class="contact-icon fa-solid fa-paper-plane"></soan></a>
           </div>
           <div class="f2 flex col jc ac">
             <ul>
@@ -244,13 +245,13 @@
         </div>
         <div id="footer-secondary" class="flex jsb as">
           <div id="social">
-            <a href="">
+            <a href="https://github.com/itsuidev" target="_blank">
               <span class="fa-brands fa-github"></span>
             </a>
             <a href="">
               <span class="fa-brands fa-linkedin"></span>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/suvicigor/" target="_blank">
               <span class="fa-brands fa-instagram"></span>
             </a>
           </div>
