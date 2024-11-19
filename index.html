@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 <head>
   <title>Timberworks - HOME</title>
-
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Timberworks - all products of wood you ever need at one place."/>
-  <meta name="keywords" content="timberworks, drveni stolovi, drvene stolice, stolarija, proizvodi od drveta"/>
+  <meta name="keywords" content="timberworks, wood tables, wood chairs, carpentry, wood products"/>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" href="img/timberworks-favicon.png"/>
 
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-  <link rel="icon" type="image/png" href="img/timberworks-favicon.png"/>
 </head>
 
 <body>
   <div id="wrapper">
-    <div id="discount">
-      <p>Special 15% discount on all orders! Discount lasts until 21.12.2024.</p>
-    </div>
-    <div id="nav-wrap">
-      <header id="nav" class="flex-center-row">
-        <ul id="nav-menu" class="flex-center-row">
+    <a href="#discount" id="pg-top">
+      <span class="fa-solid fa-arrow-up"></span>
+    </a>
+
+    <section id="discount">
+      <p>Special 15% discount on all orders except daily deals! Discount lasts until 21.12.2024.</p>
+    </section>
+
+    <section id="nav-wrap">
+      <header id="nav">
+        <ul id="nav-menu" class="flex jc ac">
           <li class="li-active">
             <a href="index.html">HOME</a>
           </li>
           <li>
-            <a href="gallery.html">PRODUCTS</a>
+            <a href="products.html">PRODUCTS</a>
           </li>
           <li id="nav-logo">
             <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
@@ -50,124 +55,210 @@
       <div id="wish">
         <span class="fa-solid fa-heart"></span>
       </div>
-    </div>
+    </section>
    
-    <div id="hero-wrap" class="flex-center-column">
-      <div id="hero" class="flex-center-column">
-        <h1>TIMBERWORKS</h1>
+    <section id="hero-wrap" class="flex col jc ac">
+      <div id="hero" class="flex col jc ac">
+        <h1>TIMBER<span>WORKS</span></h1>
         <h2>High quality products made out of the best quality wood at one place!</h2>
       </div>
-      <div id="hero-btn" class="flex-center-row">
-        <a class="hero-btn-first">Our offers</a>
+      <div id="hero-btn" class="flex jc ac">
+        <a href="#gallery-wrap" class="hero-btn-first">Our offers</a>
         <a class="hero-btn-second">About us</a>
       </div>
-      <div id="arrow" class="flex-center-row">
+      <div id="arrow">
         <span class="fa-solid fa-arrow-down"></span>
       </div>
-    </div>
+    </section>
 
-    <div id="daily-wrap">
+    <section id="daily-wrap">
       <div id="daily-side"></div>
-      <div id="daily-deal" class="flex-center-row">
-        <div id="daily-info" class="flex-center-column">
+      <div id="daily-deal" class="flex jc ac">
+        <div id="daily-info" class="flex col jc ac">
           <p id="daily-discount">
             <span class="fa-solid fa-star"></span>
             DAILY DEAL
             <span class="fa-solid fa-star"></span>
           </p>
-          <p id="daily-title">Oak-wood dining room set</p>
+          <p id="daily-title">Luxury oak dining room set</p>
           <div id="daily-contents" class="flex-start-column">
             <p>This set includes:</p>
             <p>- 4x wooden chairs</p>
             <p>- 1x large wooden table</p>
             <p>- 4x wooden plates</p>
           </div>
-          <div id="daily-btn-wrap" class="flex-space-row">
+          <div id="daily-btn-wrap" class="flex jsb ac">
             <div id="daily-btn">
-              <p>Order now!</p>
+              <a class="link-button" href="order.html">ORDER NOW!</a>
             </div>
-            <div id="daily-price-wrap" class="flex-center-row">
-              <p>600$</p>
-              <p>360$</p>
+            <div id="daily-price-wrap" class="flex jc ac">
+              <p>4000$</p>
+              <p>3200$</p>
             </div>
           </div>
         </div>
         <div id="daily-image">
+          <div id="daily-dsc-banner"></div>
           <img alt="table-set" src="img/table-set.jpg"/>
-          <div id="daily-overlay" class="flex-center-row">
+          <div id="daily-overlay">
+            <p>MORE DETAILS >></p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <div class="separator"></div>
 
-    <div id="gallery-wrap" class="flex-center-column">
-      <div id="gallery-header" class="flex-center-row">
-        <p>OUR OFFERS</p>
+    <section id="gallery-wrap" class="flex col jc ac">
+      <div id="gallery-header" class="flex col jc ac">
+        <p>SELECTED OFFERS</p>
+        <div class="line"></div>
       </div>
-      <div class="gallery-category flex-center-row">
-        <div class="category-info flex-center-column">
+      <div class="gallery-category flex jc ac">
+        <div class="category-info flex col jc ac">
           <p>Furniture sets</p>
-          <div class="line"></div>
-          <a href="gallery.html" class="view-button">View all offers</a>
+          <a href="products.html" class="link-button">View all offers</a>
         </div>
-        <div class="category-slider flex-center-row">
+        <div class="category-slider flex jc ac">
           <div class="item i1">
             <div class="item-info">
-
+              <p>Small birch round-table set x1</p>
+              <p>750$</p>
             </div>
           </div>
           <div class="item i2">
             <div class="item-info">
-
+              <p>Big birch square-table set x1</p>
+              <p>1250$</p>
             </div>
           </div>
           <div class="item i3">
             <div class="item-info">
-
+              <p>Lacquered oak rectangular set x1</p>
+              <p>2000$</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="gallery-category flex-center-row">
-        
-        <div class="category-info flex-center-column">
+      <div class="gallery-category flex jc ac">
+        <div class="category-info flex col jc ac">
           <p>Single pieces</p>
-          <div class="line"></div>
-          <a href="gallery.html" class="view-button">View all offers</a>
+          <a href="products.html" class="link-button">View all offers</a>
         </div>
-        <div class="category-slider flex-center-row">
-          <div class="item i4 singles">
+        <div class="category-slider flex jc ac">
+          <div class="item i4">
             <div class="item-info">
-
+              <p>Lacquered epoxy filled table x1</p>
+              <p>3500$</p>
             </div>
           </div>
-          <div class="item i5 singles">
+          <div class="item i5">
             <div class="item-info">
-
+              <p>Oval walnut table x1</p>
+              <p>2200$</p>
             </div>
           </div>
-          <div class="item i6 singles">
+          <div class="item i6">
             <div class="item-info">
-
+              <p>The 3 in 1 table bench x1</p>
+              <p>800$</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="about-wrap">
+    <section id="about-wrap" class="flex jc ac">
+      <div id="about-content" class="flex jc ac">
+        
+        <div id="about-info">
+          <p id="about-header">ABOUT US</p>
+          <div class="line"></div>
+          <p id="about-text">Welcome to Timberworks, where craftsmanship meets luxury. We specialize in creating high-quality, custom wooden tables and chairs that bring elegance and durability to your home or workspace. Every piece is handcrafted with precision, using only the finest materials to ensure lasting beauty. Our passion lies in transforming wood into timeless art, blending modern designs with traditional techniques.</p>
+          <div id="benefit-wrap" class="flex jsb">
+            <div class="benefit">
+              <span class="fa-solid fa-money-bill-wave"></span>
+              <p>2-YEAR WARRANTY</p>
+            </div>
+            <div class="benefit">
+              <span class="fa-solid fa-truck"></span>
+              <p>7 DAYS DELIVERY</p>
+            </div>
+            <div class="benefit">
+              <span class="fa-solid fa-ranking-star"></span>
+              <p>PREMIUM QUALITY</p>
+            </div>
+          </div>
+        </div>
+        <div id="about-form">
+          <p>CONTACT US</p>
+          <form action="" method="GET" class="flex col jc as">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Email"/>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name"/>
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Message"/>
+            <input type="submit" id="submit" name="submit"/>
+          </form>
+        </div>
+      </div>
+    </section>
 
-    </div>
-
-    <div id="contact-wrap">
-
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer-wrap">
-
-    </div>
+    <section id="footer-wrap" class="flex jc ac">
+      <footer id="footer">
+        <div id="footer-primary" class="flex jsb as">
+          <div class="f1 flex col jc ac">
+            <p>TIMBER<span>WORKS</span></p>
+            <p>carpentry</p>
+            <a href="contact.html">Contact us<span class="fa-solid fa-paper-plane"></soan></a>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>NAVIGATION</li>
+              <li><div class="line"></div></li>
+              <li class="ft-active"><a href="#discount">HOME</a></li>
+              <li><a href="products.html">PRODUCTS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="author.html">AUTHOR</a></li>
+            </ul>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>CONTACT INFO</li>
+              <li><div class="line"></div></li>
+              <li><span class="fa-solid fa-phone"></span>+381 66 437 427</li>
+              <li><span class="fa-solid fa-envelope"></span>suvic.igor@gmail.com</li>
+              <li><span class="fa-solid fa-location-dot"></span>Zdravka Čelara 16</li>
+            </ul>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>PRODUCTS</li>
+              <li><div class="line"></div></li>
+              <li>SINGLES</li>
+              <li>FURNITURE</li>
+              <li>EXTRAS</li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-secondary" class="flex jsb as">
+          <div id="social">
+            <a href="">
+              <span class="fa-brands fa-github"></span>
+            </a>
+            <a href="">
+              <span class="fa-brands fa-linkedin"></span>
+            </a>
+            <a href="">
+              <span class="fa-brands fa-instagram"></span>
+            </a>
+          </div>
+          <p>&copy;2024 ALL RIGHTS RESERVED</p>
+          <p>DEVELOPED BY IGOR SUVIĆ</p>
+        </div>
+      </footer>
+    </section>
   </div>
 </body>
 </html>
