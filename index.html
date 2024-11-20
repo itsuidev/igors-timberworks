@@ -4,8 +4,8 @@
   <title>Timberworks - HOME</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Timberworks - all products of wood you ever need at one place."/>
-  <meta name="keywords" content="timberworks, wood tables, wood chairs, carpentry, wood products"/>
+  <meta name="description" content="Timberworks - all products of quality wood you'd ever need at one place."/>
+  <meta name="keywords" content="timberworks, wood tables, wood chairs, carpentry, dining room table, round tables, dining room set, kitchen table sets, online carpentry shop, luxury wood products"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -26,21 +26,23 @@
       <span class="fa-solid fa-arrow-up"></span>
     </a>
 
-    <section id="discount">
+    <div id="discount">
       <p>Special 15% discount on all orders except daily deals! Discount lasts until 21.12.2024.</p>
-    </section>
+    </div>
 
-    <section id="nav-wrap">
-      <header id="nav">
+    <div id="nav-wrap">
+      <div id="nav">
         <ul id="nav-menu">
           <li class="li-active">
-            <a href="index.html">HOME</a>
+            <a href="#">HOME</a>
           </li>
           <li>
             <a href="products.html">PRODUCTS</a>
           </li>
           <li id="nav-logo">
-            <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
+            <a href="index.html">
+              <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
+            </a>
           </li>
           <li>
             <a href="contact.html">CONTACT</a>
@@ -49,19 +51,19 @@
             <a href="author.html">AUTHOR</a>
           </li>
         </ul>
-      </header>
+      </div>
       <div id="cart">
         <span class="fa-solid fa-basket-shopping"></span>
       </div>
       <div id="wish">
         <span class="fa-solid fa-heart"></span>
       </div>
-    </section>
+    </div>
    
-    <section id="hero-wrap" class="flex col jc ac">
+    <div id="hero-wrap" class="flex col jc ac">
       <div id="hero" class="flex col jc ac">
         <h1>TIMBER<span>WORKS</span></h1>
-        <h2>High quality products made out of the best quality wood at one place!</h2>
+        <h2 class="select">High quality products made out of the best quality wood at one place!</h2>
       </div>
       <div id="hero-btn" class="flex jc ac">
         <a href="#gallery-wrap" class="hero-btn-first">Our offers</a>
@@ -70,9 +72,9 @@
       <div id="arrow">
         <span class="fa-solid fa-arrow-down"></span>
       </div>
-    </section>
+    </div>
 
-    <section id="daily-wrap">
+    <div id="daily-wrap">
       <div id="daily-side"></div>
       <div id="daily-deal" class="flex jc ac">
         <div id="daily-info" class="flex col jc ac">
@@ -81,20 +83,20 @@
             DAILY DEAL
             <span class="fa-solid fa-star"></span>
           </p>
-          <p id="daily-title">Luxury oak dining room set</p>
-          <div id="daily-contents" class="flex-start-column">
+          <h3 id="daily-title">Luxury oak dining room set</h3>
+          <div id="daily-contents">
             <p>This set includes:</p>
             <p>- 4x wooden chairs</p>
             <p>- 1x large wooden table</p>
-            <p>- 4x wooden plates</p>
+            <p>- 4x wooden dish sets</p>
           </div>
           <div id="daily-btn-wrap" class="flex jsb ac">
             <div id="daily-btn">
-              <a class="link-button" href="order.html">ORDER NOW!</a>
+              <a class="link-button" href="products.html">ORDER NOW!</a>
             </div>
-            <div id="daily-price-wrap" class="flex jc ac">
+            <div class="price-wrap flex jc ac">
               <p>4000$</p>
-              <p>3200$</p>
+              <p>3000$</p>
             </div>
           </div>
         </div>
@@ -102,43 +104,49 @@
           <div id="daily-dsc-banner"></div>
           <img alt="table-set" src="img/table-set.jpg"/>
           <div id="daily-overlay">
-            <p>MORE DETAILS >></p>
+            <p>25% DISCOUNT</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="separator"></div>
 
-    <section id="gallery-wrap" class="flex col jc ac">
+    <div id="gallery-wrap" class="flex col jc ac">
       <div id="gallery-header" class="flex col jc ac">
-        <p>SELECTED OFFERS</p>
+        <h3>SELECTED OFFERS</h3>
         <div class="line"></div>
       </div>
       <div class="gallery-category flex jc ac">
         <div class="category-info flex col jc ac">
           <p>Furniture sets</p>
-          <a href="products.html" class="link-button">View all offers</a>
+          <a href="products.html#furniture-anchor" class="link-button">View all offers</a>
         </div>
         <div class="category-slider flex jc ac">
-          <div class="item i1">
-            <div class="item-info">
-              <p>Small birch round-table set</p>
-              <p>750$</p>
+          <a href="order.html">
+            <div class="item i1">
+              <div class="item-info">
+                <p>Small birch round-table set</p>
+                <p>800$</p>
+              </div>
             </div>
-          </div>
-          <div class="item i2">
-            <div class="item-info">
-              <p>Big birch square-table set</p>
-              <p>1250$</p>
+          </a>
+          <a href="order.html">
+            <div class="item i2">
+              <div class="item-info">
+                <p>Big birch square-table set</p>
+                <p>1250$</p>
+              </div>
             </div>
-          </div>
+          </a>
+          <a href="order.html">
           <div class="item i3">
             <div class="item-info">
-              <p>Lacquered oak rectangular set</p>
+              <p>Lacquered walnut rect set</p>
               <p>2000$</p>
             </div>
           </div>
+          </a>
         </div>
       </div>
       <div class="gallery-category flex jc ac">
@@ -167,15 +175,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="about-wrap" class="flex jc ac">
-      <div id="about-content" class="flex jc ac">
-        
+    <div id="about-wrap" class="flex jc ac">
+      <div id="about-content" class="flex jc as">
         <div id="about-info">
-          <p id="about-header">ABOUT US</p>
+          <h3 id="about-header">ABOUT US</h3>
           <div class="line"></div>
-          <p id="about-text">Welcome to Timberworks, where craftsmanship meets luxury. We specialize in creating high-quality, custom wooden tables and chairs that bring elegance and durability to your home or workspace. Every piece is handcrafted with precision, using only the finest materials to ensure lasting beauty. Our passion lies in transforming wood into timeless art, blending modern designs with traditional techniques.</p>
+          <p id="about-text" class="select">Welcome to Timberworks, where craftsmanship meets luxury. We specialize in creating high-quality, custom wooden tables and chairs that bring elegance and durability to your home or workspace. Every piece is handcrafted with precision, using only the finest materials to ensure lasting beauty. Our passion lies in transforming wood into timeless art, blending modern designs with traditional techniques.</p>
           <div id="benefit-wrap" class="flex jsb">
             <div class="benefit">
               <span class="fa-solid fa-money-bill-wave"></span>
@@ -193,26 +200,26 @@
         </div>
         <div id="about-form">
           <p>INQUIRY</p>
-          <form action="" method="GET" class="flex col jc as">
+          <form action="message.html" method="GET" class="flex col jc as">
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Email" autocomplete="autocomplete" required="required"/>
+            <input type="email" id="email" name="email" placeholder="Email" required="required"/>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" autocomplete="autocomplete" required="required"/>
+            <input type="text" id="name" name="name" placeholder="Name" required="required"/>
             <label for="message">Message:</label>
-            <input type="text" id="message" name="message" placeholder="Message" required="required"/>
+            <textarea id="message" name="message" placeholder="Message" required="required"></textarea>
             <input type="submit" id="submit" name="submit" value="SEND"/>
           </form>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="footer-wrap" class="flex jc ac">
+    <div id="footer-wrap" class="flex jc ac">
       <footer id="footer">
         <div id="footer-primary" class="flex jsb as">
           <div class="f1 flex col jc ac">
             <p>TIMBER<span>WORKS</span></p>
             <p>carpentry</p>
-            <a href="contact.html">Contact us<span class="contact-icon fa-solid fa-paper-plane"></soan></a>
+            <a href="contact.html">Contact us<span class="contact-icon fa-solid fa-paper-plane"></span></a>
           </div>
           <div class="f2 flex col jc ac">
             <ul>
@@ -237,9 +244,8 @@
             <ul>
               <li>PRODUCTS</li>
               <li><div class="line"></div></li>
-              <li>SINGLES</li>
-              <li>FURNITURE</li>
-              <li>EXTRAS</li>
+              <li><a href="products.html#singles-anchor">SINGLES</a></li>
+              <li><a href="products.html#furniture-anchor">FURNITURE</a></li>
             </ul>
           </div>
         </div>
@@ -259,7 +265,7 @@
           <p>DEVELOPED BY IGOR SUVIĆ</p>
         </div>
       </footer>
-    </section>
+    </div>
   </div>
 </body>
 </html>

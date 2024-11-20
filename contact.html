@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Timberworks - HOME</title>
+  <title>Timberworks - CONTACT</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Timberworks - all products of wood you ever need at one place."/>
-  <meta name="keywords" content="timberworks, wood tables, wood chairs, carpentry, wood products"/>
+  <meta name="description" content="Timberworks - all products of quality wood you'd ever need at one place."/>
+  <meta name="keywords" content="timberworks, wood tables, wood chairs, carpentry, dining room table, round tables, dining room set, kitchen table sets, online carpentry shop, luxury wood products"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -21,11 +21,14 @@
 
 <body>
   <div id="wrapper">
+    <a href="#discount" id="pg-top">
+      <span class="fa-solid fa-arrow-up"></span>
+    </a>
     <div id="discount">
       <p>Special 15% discount on all orders except daily deals! Discount lasts until 21.12.2024.</p>
     </div>
     <div id="nav-wrap">
-      <header id="nav-colored">
+      <div id="nav-colored">
         <ul id="nav-menu">
           <li>
             <a href="index.html">HOME</a>
@@ -34,16 +37,18 @@
             <a href="products.html">PRODUCTS</a>
           </li>
           <li id="nav-logo">
-            <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
+            <a href="contact.html">
+              <img alt="timberworks-logo" src="img/timberworks-logo.png"/>
+            </a>
           </li>
           <li class="li-active">
-            <a href="contact.html">CONTACT</a>
+            <a href="#">CONTACT</a>
           </li>
           <li>
             <a href="author.html">AUTHOR</a>
           </li>
         </ul>
-      </header>
+      </div>
       <div id="cart">
         <span class="fa-solid fa-basket-shopping"></span>
       </div>
@@ -51,9 +56,80 @@
         <span class="fa-solid fa-heart"></span>
       </div>
     </div>
-   
     
-
+    <section id="contact-wrapper" class="flex jc as">
+      <div id="contact-form" class="flex jsb ac">
+        <div id="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3484670061766!2d20.482120410964967!3d44.81446510484717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwINCY0KbQoiDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1684843368972!5m2!1ssr!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="about-form">
+          <p>CONTACT</p>
+          <form action="message.html" method="GET" class="flex col jc as">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required="required"/>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required="required"/>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Message" required="required"></textarea>
+            <input type="submit" id="submit" name="submit" value="SEND"/>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <div id="footer-wrap" class="flex jc ac">
+      <footer id="footer">
+        <div id="footer-primary" class="flex jsb as">
+          <div class="f1 flex col jc ac">
+            <p>TIMBER<span>WORKS</span></p>
+            <p>carpentry</p>
+            <a href="contact.html">Contact us<span class="contact-icon fa-solid fa-paper-plane"></span></a>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>NAVIGATION</li>
+              <li><div class="line"></div></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="products.html">PRODUCTS</a></li>
+              <li class="ft-active"><a href="#">CONTACT</a></li>
+              <li><a href="author.html">AUTHOR</a></li>
+            </ul>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>CONTACT INFO</li>
+              <li><div class="line"></div></li>
+              <li><span class="fa-solid fa-phone"></span>+381 66 437 427</li>
+              <li><span class="fa-solid fa-envelope"></span>suvic.igor@gmail.com</li>
+              <li><span class="fa-solid fa-location-dot"></span>Zdravka Čelara 16</li>
+            </ul>
+          </div>
+          <div class="f2 flex col jc ac">
+            <ul>
+              <li>PRODUCTS</li>
+              <li><div class="line"></div></li>
+              <li><a href="products.html#singles-anchor">SINGLES</a></li>
+              <li><a href="products.html#furniture-anchor">FURNITURE</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-secondary" class="flex jsb as">
+          <div id="social">
+            <a href="https://github.com/itsuidev" target="_blank">
+              <span class="fa-brands fa-github"></span>
+            </a>
+            <a href="">
+              <span class="fa-brands fa-linkedin"></span>
+            </a>
+            <a href="https://www.instagram.com/suvicigor/" target="_blank">
+              <span class="fa-brands fa-instagram"></span>
+            </a>
+          </div>
+          <p>&copy;2024 ALL RIGHTS RESERVED</p>
+          <p>DEVELOPED BY IGOR SUVIĆ</p>
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
