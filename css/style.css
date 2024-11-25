@@ -38,9 +38,6 @@
 .je { justify-content: flex-end; }
 .as { align-items: flex-start; }
 .ae { align-items: flex-end; }
-.g10 { gap: 10px; }
-.g20 { gap: 20px; }
-.g50 { gap: 50px; }
 
 @keyframes fade-in {
   0% {
@@ -48,6 +45,18 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 40px;
   }
 }
 
@@ -60,17 +69,14 @@ body {
 }
 
 #pg-top {
-  display: block;
   position: fixed;
   z-index: 10;
   bottom: 30px;
   right: 30px;
-  width: 40px;
   height: 40px;
   background-color: var(--primary);
   border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
+  padding: 7px 13px;
   font-size: 20px;
 }
 
@@ -148,7 +154,6 @@ body {
 #cart, #wish {
   position: absolute;
   top: 55px;
-  width: 40px;
   height: 40px;
   border-radius: 5px;
   background-color: var(--primary);
@@ -182,11 +187,21 @@ body {
   font-weight: 800;
   font-size: 70px;
   color: var(--primary);
+  text-align: center;
 }
 
-#hero h1 span {
+#h1-span {
   color: var(--secondary);
 }
+
+#h1-sub {
+  display: block;
+  color: var(--textlight);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0px;
+}
+
 
 #hero h2 {
   font-weight: 400;
@@ -255,18 +270,6 @@ body {
 
 .hero-btn-second:hover:before {
   transform: translateX(-15%) skewX(30deg);
-}
-
-@keyframes float {
-  0% {
-    bottom: 40px;
-  }
-  50% {
-    bottom: 50px;
-  }
-  100% {
-    bottom: 40px;
-  }
 }
 
 #arrow {
@@ -440,6 +443,13 @@ body {
   gap: 60px;
 }
 
+.selected-text {
+  color: var(--textdark);
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .category-info p {
   color: var(--textdark);
   font-size: 22px;
@@ -562,7 +572,7 @@ body {
   color: var(--secondary);
   letter-spacing: 2px;
   margin-bottom: 10px;
-  margin-left: 25%;
+  text-align: center;
 }
 
 #about-form form label {
@@ -597,8 +607,7 @@ body {
 }
 
 #about-form input[type="submit"] {
-  margin-top: 40px;
-  margin-left: 26%;
+  margin: 40px auto 0px;
   padding: 15px 80px;
   border: 1px solid var(--accent);
   background-color: var(--secondary);
@@ -788,10 +797,13 @@ footer {
   position: relative;
   height: 100vh;
   background-color: var(--background);
+  background-image: url('../img/author-background.jpg');
+  background-size: cover;
 }
 
 #author-content {
-  margin-top: 100px;
+  margin-top: 150px;
+  box-shadow: 0px 0px 35px 2px var(--accent);
 }
 
 #author-wrap img {
@@ -812,6 +824,7 @@ footer {
   height: 90px;
   background-color: var(--accent);
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .author-header {
