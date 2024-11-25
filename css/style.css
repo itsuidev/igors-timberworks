@@ -151,25 +151,18 @@ body {
   margin-top: 15px;
 }
 
-#cart, #wish {
+#cart {
   position: absolute;
   top: 55px;
   height: 40px;
+  width: 40px;
   border-radius: 5px;
+  right: 30px;
+  padding: 8px 11px;
   background-color: var(--primary);
 }
 
-#cart {
-  padding: 9px 11px;
-  right: 90px;
-}
-
-#wish {
-  padding: 9px 12px;
-  right: 30px;
-}
-
-#cart:hover, #wish:hover {
+#cart:hover {
   transform: scale(1.05);
 }
 
@@ -450,6 +443,10 @@ body {
   text-align: center;
 }
 
+.selected-text strong {
+  color: var(--textdark);
+}
+
 .category-info p {
   color: var(--textdark);
   font-size: 22px;
@@ -530,7 +527,7 @@ body {
 }
 
 .i1, .i2, .i3, .i4, .i5, .i6 {
-  background-image: url('../img/offers.jpg');
+  background-image: url('../img/favorite-picks.jpg');
 }
 .i1 {
   background-position: 0px 0px;
