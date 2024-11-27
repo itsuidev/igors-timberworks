@@ -442,6 +442,7 @@ body {
   height: 32%;
   width: 1400px;
   gap: 60px;
+  margin-top: 10px;
 }
 
 .selected-text {
