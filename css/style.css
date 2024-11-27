@@ -192,7 +192,8 @@ body {
   color: var(--textlight);
   font-weight: 400;
   font-size: 28px;
-  letter-spacing: 0px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 
@@ -204,7 +205,7 @@ body {
 #hero-btn {
   height: 140px;
   width: 800px;
-  margin-top: 10px;
+  margin-top: 30px;
   gap: 40px;
 }
 
@@ -370,9 +371,16 @@ body {
 
 .link-button {
   color: var(--textlight);
-  padding: 15px 50px;
+  display: block;
+  width: 220px;
+  padding: 15px 20px;
   border-radius: 5px;
   background-color: var(--primary);
+}
+
+.link-button span {
+  padding-left: 45px;
+  font-size: 13px;
 }
 
 .link-button:hover {
@@ -391,7 +399,7 @@ body {
 }
 
 #daily-btn a:hover {
-  padding: 15px 60px;
+  box-shadow: none;
 }
 
 .price-wrap {
@@ -470,7 +478,6 @@ body {
 
 .category-info a {
   background-color: var(--primary);
-  box-shadow: 5px 5px var(--accent);
 }
 
 .line {
@@ -513,6 +520,20 @@ body {
   width: 100%;
   height: 30%;
   background-color: var(--bordersoft);
+}
+
+.item a {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--background);
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  padding: 8px 10px;
+  border: 1px solid var(--bordersoft)
 }
 
 .item-info p {
@@ -662,10 +683,6 @@ body {
   color: var(--secondary);
 }
 
-#benefit-wrap .benefit:nth-child(2) span {
-  color: var(--primary);
-}
-
 #benefit {
   text-align: center;
 }
@@ -708,7 +725,7 @@ footer {
 }
 
 #social a span:hover {
-  transform: scale(1.1);
+  color: var(--primary);
 }
 
 .f2 ul li:nth-child(2) {
@@ -948,6 +965,22 @@ footer {
   background-color: var(--secondary);
 }
 
+.single {
+  background-image: url('../img/favorite-picks.jpg');
+}
+
+.s1 {
+  background-position: 0px 1100px;
+}
+
+.s2 {
+  background-position: 0px 700px;
+}
+
+.s3 {
+  background-position: 0px 380px;
+}
+
 .furniture-title {
   font-size: 28px;
 }
@@ -1036,23 +1069,8 @@ footer {
   margin-bottom: 50px;
 }
 
-.furniture-medium-group {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
+.furniture-single-img {
 
-.furniture-medium {
-  width: 48%;
-}
-
-.furniture-medium-img {
-  background-image: url('../img/furniture-sets.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 350px;
-  border-radius: 10px;
-  border: 1px solid var(--bordersoft);
 }
 
 #contact-wrapper {
