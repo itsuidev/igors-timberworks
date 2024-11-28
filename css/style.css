@@ -378,6 +378,10 @@ body {
   background-color: var(--primary);
 }
 
+.big-link {
+  padding: 120px;
+}
+
 .link-button span {
   padding-left: 45px;
   font-size: 13px;
@@ -959,7 +963,7 @@ footer {
 }
 
 .furniture-big-info a {
-  padding: 10px 160px;
+  padding: 10px 210px 10px 165px;
 }
 
 .furniture-big-info a:hover {
@@ -1060,18 +1064,8 @@ footer {
   background-position: 0px -4350px;
 }
 
-#out-of-stock {
-  height: 500px;
-  width: 100%;
-  background-color: var(--background);
-}
-
 .sets-holder{
   margin-bottom: 50px;
-}
-
-.furniture-single-img {
-
 }
 
 #contact-wrapper {
@@ -1083,13 +1077,36 @@ footer {
   margin-top: 250px;
 }
 
-#google-map iframe {
+#google-map {
+  position: relative;
+}
+
+#map-open {
+  position: absolute;
+  background-color: var(--accent);
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  left: calc(50% - 125px);
+  bottom: 0px;
+  opacity: 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+#google-map:hover #map-open {
+  opacity: 1;
+  bottom: 20px;
+}
+
+#google-map img {
   border-radius: 25px;
   width: 40rem;
   height: 35rem;
+  object-fit: cover;
   filter: grayscale(1);
 }
 
-#google-map iframe:hover {
+#google-map img:hover {
   filter: grayscale(0);
 }
