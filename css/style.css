@@ -445,7 +445,7 @@ body {
   margin-top: 10px;
 }
 
-.selected-text {
+#selected-text {
   color: var(--textdark);
   font-size: 22px;
   margin-top: 40px;
@@ -453,12 +453,12 @@ body {
   width: 1300px;
 }
 
-.selected-text a {
+#selected-text a {
   color: var(--primary);
   font-weight: bold;
 }
 
-.selected-text strong {
+#selected-text strong {
   color: var(--textdark);
 }
 
