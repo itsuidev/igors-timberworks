@@ -818,6 +818,15 @@ footer {
   margin-bottom: 15px;
 }
 
+.author-div {
+  font-size: 28px;
+  text-align: center;
+}
+
+.author-div span {
+  display: block;
+}
+
 #author-wrap {
   position: relative;
   height: 100vh;
